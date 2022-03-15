@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>ты не пройдеш!</title>
+ <style>
+ #passwordBox {
+ height: 24px;
+ width: auto;
+ margin-left: 16pt;
+ border: 2px solid #000;
+ }
+
+ body {
+ background-color: orange;
+ padding: 30px;
+ }
+ 
+ h1 {
+ font-size: 32px;
+ font-family: arial;
+ font-weight: 800;
+ padding: 24px;
+ text-align: center;
+ margin: 0 auto;
+ }
+ 
+ #wrapper {
+ background-color: #fff;
+ margin: 24px 100px;
+ 
+ #subtitle {
+ font-family: arial;
+ font-size: 18px;
+ text-align: center;
+ }
+ 
+ a{
+ color:#fff;
+ padding: 8px 16px;
+ font-family: arial;
+ font-size: 18px;
+ border: 0px solid;
+ }
+ </style>
+ <script>
+function checkPassword() {
+var password = document.getElementById("passwordBox");
+var passwordText = password.value;
+if(passwordText ==  "kuda_lezesh") {
+ return true;
+}
+alert ("у вас нет доступа!");
+ return false;
+ }
+</script>
+</head>
+<body>
+<div id="wrapper">
+<p>пароль:<input id="passwordBox" type="password" placeholder="введите пароль"/></p>
+<a href="ви¤вленн¤ чернечого д?амана.html" onclick="return checkPassword();">
+Увійти
+</a>
+</div>
+
+</body>
+</html>
